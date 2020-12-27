@@ -4,7 +4,7 @@ def fibonacci(limit):
     fList.append(f)
     fList.append(f)
     for n in range(2, limit):
-        calc = fList[n - 1] + abs(fList[n - 2])
+        calc = abs(fList[n - 1]) + abs(fList[n - 2])
         fList.append(calc)
     print(fList)
 
